@@ -50,6 +50,12 @@ public class MainActivity extends AppCompatActivity {
                 inputUmur = Integer.parseInt(((EditText) edUmur).getText().toString());
                     if(inputUmur <=5) {
                         edUmur.setText("Status:anak");
+                    }else if (inputUmur<20){
+                        edUmur.setText("Status:remaja");
+                    }else if (inputUmur<40){
+                        edUmur.setText("Status:dewasa");
+                    }else if (inputUmur>40){
+                        edUmur.setText("Status:tua");
                     }
             }
         });
